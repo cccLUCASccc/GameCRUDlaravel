@@ -48,7 +48,7 @@ class UserController extends Controller
 
     public function index(){
         $user = User::where('email', Auth::user()->email)->first();
-        $jeux = Jeux::where('createur_id', Auth::id())->get();
+        $jeux = Jeux::where('createur_id', Auth::id())->paginate(5);
 
         return view('dashboard', ['user' => $user, 'jeux' => $jeux]);
     }

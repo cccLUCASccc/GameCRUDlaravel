@@ -51,7 +51,8 @@
                     </div>
     
                 </div>
-    
+
+                
                 <div class="mt-10 flex justify-center items-center">
                     <x-link class=" p-[5px] m-[25px]" href="/Jeux/{{$jeu->id}}">Retour</x-link>
                     <x-button form="modifier">Modifier</x-button>

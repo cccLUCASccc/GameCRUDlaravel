@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use App\Models\Jeux;
+use App\Models\User;
 use Illuminate\Support\Facades\Auth;
 
 class JeuxController extends Controller
@@ -16,7 +17,8 @@ class JeuxController extends Controller
 
     public function details($id){
         $jeu = Jeux::where('id', $id)->first();
-        return view('Details', ['jeu'=>$jeu]);
+        $createur = User::where('id', $jeu->createur_id)->first();
+        return view('Details', ['jeu'=>$jeu, 'createur' => $createur]);
     }
 
     public function delete($id){

@@ -15,4 +15,7 @@
             </ul>
         </div>
     </div>
+    <div class="mt-[80px]">
+        {{ $jeux->links() }}
+    </div>
 </x-layout>

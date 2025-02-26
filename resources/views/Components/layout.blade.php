@@ -15,17 +15,17 @@
                 </div>
                 <div class="flex justify-end items-center">
                     <x-link href="/">Jeux</x-link>
-                    <x-link href="/Jeux/creer" >Créer</x-link>
                     @auth
+                        <x-link href="/Jeux/creer" >Créer</x-link>
                         <form method="GET" action="/logout" id="logout">
 
                         </form>
                         <x-link href="/dashboard">Profile</x-link>
-                        <x-button form="logout">LogOut</x-button>
+                        <x-button form="logout">Déconnexion</x-button>
                     @endauth
                     @guest
-                        <x-link href="/login">Login</x-link>
-                        <x-link href="/register" >Sign up</x-link>   
+                        <x-link href="/login">Se connecter</x-link>
+                        <x-link href="/register" >Creer un compte</x-link>   
                     @endguest
                 </div>
             </nav>

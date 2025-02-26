@@ -13,7 +13,6 @@
                 @csrf
     
                 <div class="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
-    
                     <div>
                         <label for="name" class="block text-sm/6 font-semibold text-gray-900">Nom</label>
                         <div class="mt-2.5">
@@ -23,7 +22,6 @@
                                 class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
                         </div>
                     </div>
-    
                     <div>
                         <label for="producteur" class="block text-sm/6 font-semibold text-gray-900">Producteur</label>
                         <div class="mt-2.5">
@@ -34,7 +32,6 @@
                                 class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
                         </div>
                     </div>
-    
                     <div>
                         <label for="release_year" class="block text-sm/6 font-semibold text-gray-900">Année de sortie</label>
                         <div class="mt-2.5">
@@ -45,10 +42,9 @@
                                 class="block w-full rounded-md bg-white px-3.5 py-2 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600">
                         </div>
                     </div>
-    
                 </div>
 
-                
+
 
                 <div class="flex justify-center items-center">
                     <x-link class=" p-[5px] m-[25px]" href="/">Retour</x-link>
